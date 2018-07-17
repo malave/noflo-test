@@ -9,6 +9,17 @@
     "inports": {},
     "outports": {},
     "groups": [],
-    "processes": {},
+    "processes": {
+        "test/MyTestOutput_5y1ie": {
+            "component": "test/MyTestOutput",
+            "metadata": {
+                "label": "MyTestOutput",
+                "x": 334,
+                "y": 100,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
     "connections": []
 }
