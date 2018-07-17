@@ -4,12 +4,51 @@
         "name": "main",
         "environment": {
             "type": "noflo-nodejs"
-        },
-        "icon": "500px"
+        }
     },
     "inports": {},
     "outports": {},
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "test/MyTestOutput_dbrc5": {
+            "component": "test/MyTestOutput",
+            "metadata": {
+                "label": "MyTestOutput",
+                "x": 504,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "test/MyTestOutput_3thwt": {
+            "component": "test/MyTestOutput",
+            "metadata": {
+                "label": "MyTestOutput",
+                "x": 684,
+                "y": 252,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "test/MyTestOutput_dbrc5",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "test/MyTestOutput_3thwt",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "test3",
+            "tgt": {
+                "process": "test/MyTestOutput_dbrc5",
+                "port": "in"
+            }
+        }
+    ]
 }
