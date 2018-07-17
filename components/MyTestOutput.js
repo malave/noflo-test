@@ -20,7 +20,7 @@ exports.getComponent = () => {
 
     c.inPorts.add('in', {
         datatype: 'all',
-        description: 'Packet to be printed through console.log(@2)',
+        description: 'Packet to be printed through console.log',
     });
     c.inPorts.add('options', {
         datatype: 'object',
