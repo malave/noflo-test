@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "noflo": "^1.1.3",
+    "noflo-core": "^0.5.0",
+    "noflo-filesystem": "^2.0.1",
+    "noflo-nodejs": "^0.10.1"
+  },
+  "name": "noflo-test",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malave/noflo-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malave/noflo-test/issues"
+  },
+  "homepage": "https://github.com/malave/noflo-test#readme"
+}

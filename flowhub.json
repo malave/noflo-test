@@ -1,0 +1,15 @@
+{
+  "id": "ea9e76e2-02b3-4ad1-a212-2b2540e1dfc7",
+  "label": "noflo-test NoFlo runtime",
+  "secret": "some-password",
+  "permissions": {
+    "some-password": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
