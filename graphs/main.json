@@ -4,22 +4,73 @@
         "name": "main",
         "environment": {
             "type": "noflo-nodejs"
-        }
+        },
+        "icon": "cog"
     },
     "inports": {},
     "outports": {},
     "groups": [],
     "processes": {
-        "test/MyTestOutput_5y1ie": {
-            "component": "test/MyTestOutput",
+        "test/Start_epk4v": {
+            "component": "test/Start",
             "metadata": {
-                "label": "MyTestOutput",
-                "x": 334,
-                "y": 100,
+                "label": "Start",
+                "x": 36,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "test/Console_5y1m8": {
+            "component": "test/Console",
+            "metadata": {
+                "label": "Console",
+                "x": 144,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "test/End_a0bjl": {
+            "component": "test/End",
+            "metadata": {
+                "label": "End",
+                "x": 288,
+                "y": 36,
                 "width": 72,
                 "height": 72
             }
         }
     },
-    "connections": []
+    "connections": [
+        {
+            "src": {
+                "process": "test/Start_epk4v",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "test/Console_5y1m8",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "test/Console_5y1m8",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "test/End_a0bjl",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "test",
+            "tgt": {
+                "process": "test/Start_epk4v",
+                "port": "in"
+            }
+        }
+    ]
 }
